@@ -1,0 +1,105 @@
+.name {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    background-color: #090101;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f4f3f3;
+    padding: 10px 45px;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #40c276;
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    width: 25%;
+}
+
+.search-container button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #000901;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.stu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table,
+th,
+td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: center;
+
+}
+
+.welcome h1 {
+    text-align: center;
+}
+
+.welcome p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+
+body {
+    background-image: url(/images/bgimg1-modified.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 36px;
+    color: #080000;
+    padding: 10px;
+}
+
+.message h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.message p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+
+footer {
+    background-color: #000901;
+}
+
+footer p {
+    color: #f4f3f3;
+    text-align: center;
+    padding: 10px;
+}
+
+.list_courses {
+    text-align: center;
+}

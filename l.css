@@ -1,0 +1,33 @@
+.name {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+    background-color: #090101;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f4f3f3;
+    padding: 10px 45px;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #40c276;
+}
+body{
+    background-color: rgb(232, 232, 232);
+}
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    margin-bottom: 10px;
+}

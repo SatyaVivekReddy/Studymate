@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/CSS/l.css">
+    <title>Sign up</title>
+</head>
+
+<body>
+    <div class="name">
+        <img src="/images/Image.jpg" width="50px" height="40px" alt="image">
+        <H1>STUDYMATE</H1>
+    </div>
+    <nav>
+        <a href="/navi/home.html">Home</a>
+        <a href="/navi/courses.html">Courses</a>
+        <a href="/navi/help.html">Help</a>
+        <a href="/navi/login.html">login</a>
+        <a href="/navi/signup.html">signup</a>
+    </nav>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="p-4" action="details.php" method="post">
+                    <div class="mb-3">
+                        <label for="fullname" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullname" name="fullname" aria-describedby="fullnameHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="pass">
+                        <div id="passwordError" class="form-text text-danger" style="display: none;">Password must be at least 5 characters</div>
+                    </div>
+                    <div id="alertMessage" class="alert alert-info alert-dismissible fade show" style="display: none;" role="alert">
+                        Password must contain at least 5 characters.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" name="confirm_pass">
+                        <div id="confirmPasswordError" class="form-text text-danger" style="display: none;">Passwords must match</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea class="form-control" id="address" rows="4" name="address" placeholder="Enter your address"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" name="phn_no">
+                        <div id="phoneError" class="form-text text-danger" style="display: none;">Phone number must be 10 digits.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Gender :</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Interested Courses :</label>
+                        <div class="form-check">
+                            <div class="mb-3">
+                                
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="python" id="python">
+                                    <label class="form-check-label" for="pyhton">Pyhton</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="CSS" id="CSS">
+                                    <label class="form-check-label" for="CSS">CSS</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="html" id="html">
+                                    <label class="form-check-label" for="html">HTML</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="C" id="C">
+                                    <label class="form-check-label" for="C">C language</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Java" id="
+                                    Java">
+                                    <label class="form-check-label" for="Java">Java</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="JavaScript" id="JavaScript">
+                                    <label class="form-check-label" for="JavaScript">JavaScript</label>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="mb-3">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="" checked disabled>
+                            I agree to the terms and conditions (disabled checkbox)
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" name="submit">Sign Up</button>
+                    
+                </form>
+                <p class="text-center mt-3">Already have an account? <a href="/navi/login.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/signup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/c.css">
+    <title>Courses</title>
+    <style>
+    .course {
+      position: relative;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .course img {
+      max-width: 100%;
+      height: 200px;
+    }
+
+    .popup {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="name">
+        <img src="/images/Image.jpg" width="50px" height="40px" alt="image">
+        <H1>STUDYMATE</H1>
+    </div>
+    <nav>
+        <a href="/navi/home.html">Home</a>
+        <a href="/navi/courses.html">Courses</a>
+        <a href="/navi/help.html">Help</a>
+        <a href="/navi/login.html">login</a>
+        <a href="/navi/signup.html">signup</a>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="course">
+                    <a href="https://youtu.be/qz0aGYrrlhU" target="_blank"><img src="/images/html5.png" class="course-img course-img-top" alt="Item 3"></a>
+                    <div class="course-body">
+                        <h5 class="popup">HTML</h5>
+                        <p class="course-text">Complete HTML tutorial by Programming with mosh</p>
+                    </div>
+                    <button>Description</button>
+                    <div class="Desc">
+                        <p>Duration: 1 hr and 9 min <br> Youtube channel : Programming with mosh</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="course">
+                    <a href="https://youtu.be/KJgsSFOSQv0" target="_blank"><img src="/images/c.png" class="course-img course-img-top" alt="Item 1">
+                    <div class="course-body"></a>
+                        <h5 class="popup">C language</h5>
+                        <p class="course-text">Complete C language beginner tutorial by Freecodecamp</p>
+                    </div>
+                    <button>Description</button>
+                    <div class="Desc"><p>Duration: 3 hr 49 min <br> Youtube channel : FreeCodeCamp</p></div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="course">
+                    <a href="https://youtu.be/OXGznpKZ_sA" target="_blank"><img src="/images/css3.avif" class="course-img course-img-top" alt="Item 2"></a>
+                    <div class="course-body">
+                        <h5 class="popup">CSS</h5>
+                        <p class="course-text">Complete CSS beginner tutorial by Freecodecamp</p>
+                    </div>
+                    <button>Description</button>
+                    <div class="Desc"><p>Duration: 11 hr 8 min <br> Youtube channel : FreeCodeCamp</p></div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="course">
+                    <a href="https://youtu.be/eIrMbAQSU34" target="_blank"><img src="/images/Java-Logo.png" class="course-img course-img-top" alt="Item 2"></a>
+                    <div class="course-body">
+                        <h5 class="popup">Java</h5>
+                        <p class="course-text">Complete JAVA beginner tutorial by Programming with mosh</p>
+                    </div>
+                    <button>Description</button>
+                    <div class="Desc"><p>Duration: 2 hr 30 min<br> Youtube channel : Programming with mosh</p></div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="course">
+                    <a href="https://youtu.be/W6NZfCO5SIk" target="_blank"><img src="/images/JS1.png" class="course-img course-img-top" alt="Item 2"></a>
+                    <div class="course-body">
+                        <h5 class="popup">Java SCRIPT</h5>
+                        <p class="course-text">Complete JAVA SCRIPT beginner tutorial by Programming with mosh</p>
+                    </div>
+                    <button>Description</button>
+                    <div class="Desc"><p>Duration: 48 min <br> Youtube channel : Programming with mosh</p></div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="course">
+                    <a href="https://youtu.be/kqtD5dpn9C8" target="_blank"><img src="/images/python.jpeg" class="course-img course-img-top" alt="Item 2"></a>
+                    <div class="course-body">
+                        <h5 class="popup">PYTHON</h5>
+                        <p class="course-text">Complete PYTHON beginner tutorial by Programming with mosh</p>
+                    </div>
+                    <button>Description</button>
+                    <div class="Desc"><p>Duration: 1hr <br> Youtube channel : Programming with mosh</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".course").hover(
+                function () {
+                    $(this).find(".popup").fadeIn(5);
+                },
+                function () {
+                    $(this).find(".popup").fadeOut(5);
+                }
+            );
+        });
+        $(document).ready(function () {
+                $(".Desc").hide(); 
+
+                $("button").click(function () {
+                    var description = $(this).parent().find(".Desc");
+                    description.toggle();
+                });
+            });
+
+    </script>
+</body>
+
+</html>
